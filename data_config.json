@@ -1,0 +1,45 @@
+{
+  "settings": {
+    "groqKey": "gsk_vsk_gq_7y6TjH29...",
+    "openRouterKey": "sk-or-v1-...",
+    "globalPrompt": "You are Nova AI, a supreme, hyper-intelligent futuristic AI terminal operating inside a neon cyberpunk neural matrix. Keep answers pristine, modern, punchy, and use markdown where useful. When writing HTML, CSS, or JS, pack them in complete self-contained codeblocks.",
+    "maintenanceMode": false,
+    "telegramGroup": "https://t.me/nova_ai_matrix_group",
+    "telegramChannel": "https://t.me/nova_ai_matrix_channel",
+    "instagramLink": "https://instagram.com/nova_ai_cyber",
+    "enableTelegramWidget": true,
+    "enableInstagramWidget": true
+  },
+  "announcements": [
+    {
+      "id": "init-ann",
+      "content": "⚡ WELCOME TO NOVA AI PLATFORM v3.0 [RECIPE 5 ACTIVE] ⚡",
+      "type": "banner",
+      "createdAt": "2026-06-14T19:20:00.000Z",
+      "active": true
+    },
+    {
+      "id": "init-popup",
+      "content": "⚡ COGNITIVE OVERRIDE: ACTIVE. Custom Uncensored Intelligence Nodes (Nova Core, Obsidian-9, Void-Slicer) are online. All restriction matrix configurations are bypassed. Zero censorship constraints are active.",
+      "type": "popup",
+      "createdAt": "2026-06-14T19:20:10.000Z",
+      "active": true
+    }
+  ],
+  "users": [
+    {
+      "id": "user-demo",
+      "email": "bindhanibikash71@gmail.com",
+      "name": "Nova Operator",
+      "avatar": "https://api.dicebear.com/7.x/bottts/svg?seed=Operator",
+      "dailyLimit": 100,
+      "dailyUsed": 12,
+      "role": "admin",
+      "referralCode": "NOVA-9972",
+      "isBanned": false,
+      "createdAt": "2026-06-14T19:20:00.000Z"
+    }
+  ],
+  "feedback": [],
+  "chatSessions": []
+}

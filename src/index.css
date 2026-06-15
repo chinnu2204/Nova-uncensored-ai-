@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Cyberpunk Brutalist background configurations */
+.pixel-grid {
+  background-image: radial-gradient(rgba(255, 26, 26, 0.08) 1px, transparent 1px);
+  background-size: 16px 16px;
+}
+
+/* Custom low-friction retro scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF1A1A;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff5555;
+}
+
+/* Base resets */
+body {
+  background-color: #050505;
+  color: #ffffff;
+}

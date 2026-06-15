@@ -1,0 +1,6 @@
+{
+  "name": "Nova AI",
+  "description": "Futuristic mobile-first AI engine with live HTML/CSS/JS code running features, dynamic agent hubs, and an admin command deck.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

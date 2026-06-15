@@ -1,0 +1,35 @@
+services:
+  # Python FastAPI Backend API Service
+  - type: web
+    name: nova-ai-backend
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port 10000
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: nova-postgres-db
+          property: connectionString
+      - key: GEMINI_API_KEY
+        sync: false # Set as environment secret in Render GUI
+      - key: GROQ_API_KEY
+        sync: false
+      - key: OPENROUTER_API_KEY
+        sync: false
+
+  # Next.js Static/Edge Frontend Service
+  - type: web
+    name: nova-ai-frontend
+    runtime: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          name: nova-ai-backend
+          property: host
+
+databases:
+  - name: nova-postgres-db
+    plan: free # Eligible for free database tier
+    region: oregon
